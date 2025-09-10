@@ -44,8 +44,12 @@ class Cat extends Animal {
     super(type)
   }
 
+  getType(){
+    return super.getType()
+  }
+
   speak(){
-    return `The ${super.getType()} meows`
+    return `The ${this.getType()} meows`
   }
 }
 
